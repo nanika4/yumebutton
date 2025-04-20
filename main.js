@@ -20,7 +20,7 @@ function pressButton() {
     messageBox.className = "show";
     share.classList.remove("hidden");
 
-    const text = encodeURIComponent("このボタン、押したら『ユメボタン』だった。\n#ユメボタン");
+    const text = encodeURIComponent("#ユメボタン #ユメカナウ");
     const url = encodeURIComponent(window.location.href);
     document.getElementById("share-x").href = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
   }
