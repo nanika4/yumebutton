@@ -17,9 +17,7 @@ function pressButton() {
     messageBox.className = "show";
     share.classList.remove("hidden");
 
-    // SNSテンプレートのURL生成
-    const text = encodeURIComponent("このボタン、押したら「ユメボタン」だった。
-#ユメボタン #夢か叶うボタン");
+    const text = encodeURIComponent("このボタン、押したら『ユメボタン』だった。\n#ユメボタン");
     const url = encodeURIComponent(window.location.href);
     document.getElementById("share-x").href = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
   }

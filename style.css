@@ -8,12 +8,9 @@ body {
   height: 100vh;
   font-family: 'Arial', sans-serif;
 }
-
 .container {
-  position: relative;
   text-align: center;
 }
-
 #button {
   width: 300px;
   height: auto;
@@ -21,12 +18,10 @@ body {
   transition: transform 0.1s ease, box-shadow 0.1s ease;
   box-shadow: 0px 8px 0px #999;
 }
-
 #button:active {
   transform: translateY(8px);
   box-shadow: 0px 0px 0px #999;
 }
-
 #message {
   margin-top: 20px;
   font-size: 1.5rem;
@@ -34,38 +29,31 @@ body {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-
 #message.show {
   opacity: 1;
 }
-
 #message.winner {
   background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
   -webkit-background-clip: text;
   color: transparent;
 }
-
 #winner-form {
   margin-top: 20px;
 }
-
 #winner-form input {
   padding: 10px;
   font-size: 1rem;
   width: 80%;
   margin-bottom: 10px;
 }
-
 #winner-form button {
   padding: 10px 20px;
   font-size: 1rem;
   cursor: pointer;
 }
-
 #share {
   margin-top: 20px;
 }
-
 #share a {
   display: inline-block;
   padding: 10px 20px;
@@ -74,7 +62,6 @@ body {
   text-decoration: none;
   border-radius: 5px;
 }
-
 .hidden {
   display: none;
 }
