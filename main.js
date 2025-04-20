@@ -1,4 +1,7 @@
 function pressButton() {
+  const audio = document.getElementById("click-sound");
+  audio.currentTime = 0;
+  audio.play();
   const messageBox = document.getElementById("message");
   const form = document.getElementById("winner-form");
   const share = document.getElementById("share");
