@@ -21,7 +21,6 @@ function pressButton() {
     share.classList.remove("hidden");
 
     const text = encodeURIComponent("#ユメボタン #ユメカナウ");
-    const url = encodeURIComponent(window.location.href);
     document.getElementById("share-x").href = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
   }
 }
