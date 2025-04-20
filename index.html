@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ユメボタン</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="images/button.png" alt="ユメボタン" id="button" onclick="pressButton()">
+    <div id="message" class="hidden"></div>
+    <form id="winner-form" class="hidden">
+      <p>🎁 ご連絡先を入力してください（電話番号 または メールアドレス）</p>
+      <input type="text" placeholder="電話番号またはメールアドレス">
+      <button type="submit">送信</button>
+    </form>
+    <div id="share" class="hidden">
+      <p>このボタン、押してみて。「ユメボタン」ってやつ。</p>
+      <a href="#" id="share-x" target="_blank">Xでシェア</a>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
