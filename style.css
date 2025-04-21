@@ -4,8 +4,6 @@ body {
   background-color: white;
   font-family: 'Arial', sans-serif;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .container {
