@@ -17,8 +17,9 @@ function pressButton() {
     form.classList.remove("hidden");
   } else {
     messageBox.textContent = "ハズレ、アシタユメカナウ";
-    messageBox.className = "show";
-    share.classList.remove("hidden");
+　　messageBox.classList.remove("hidden");
+　　messageBox.classList.add("show");
+
 
     const text = encodeURIComponent("#ユメボタン #ユメカナウ");
     document.getElementById("share-x").href = `https://twitter.com/intent/tweet?text=${text}`;
