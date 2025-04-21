@@ -8,12 +8,13 @@ body {
 
 .container {
   text-align: center;
-  flex-grow: 1; /* フッターを下へ押し出す */
+  min-height: calc(100vh - 80px); /* フッター分除いて中央寄せ */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 
 #button {
   width: 300px;
@@ -36,8 +37,10 @@ body {
 }
 
 #message.show {
+  display: block;
   opacity: 1;
 }
+
 
 #message.winner {
   background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
