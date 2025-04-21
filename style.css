@@ -2,25 +2,33 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 .container {
   text-align: center;
+  flex-grow: 1; /* フッターを下へ押し出す */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 #button {
   width: 300px;
   height: auto;
   cursor: pointer;
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
+
 #button:active {
   transform: translateY(8px);
   box-shadow: none;
 }
+
 #message {
   margin-top: 20px;
   font-size: 1.5rem;
@@ -28,31 +36,38 @@ body {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
+
 #message.show {
   opacity: 1;
 }
+
 #message.winner {
   background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
   -webkit-background-clip: text;
   color: transparent;
 }
+
 #winner-form {
   margin-top: 20px;
 }
+
 #winner-form input {
   padding: 10px;
   font-size: 1rem;
   width: 80%;
   margin-bottom: 10px;
 }
+
 #winner-form button {
   padding: 10px 20px;
   font-size: 1rem;
   cursor: pointer;
 }
+
 #share {
   margin-top: 20px;
 }
+
 #share a {
   display: inline-block;
   padding: 10px 20px;
@@ -61,17 +76,17 @@ body {
   text-decoration: none;
   border-radius: 5px;
 }
+
 .hidden {
   display: none;
 }
-.hidden {
-  display: none;
-}
+
 .site-footer {
   text-align: center;
   margin-top: 40px;
   font-size: 0.85rem;
   color: #333;
+  padding-bottom: 20px;
 }
 
 .site-footer a {
